@@ -29,7 +29,7 @@ const Contact = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("/api/v1/signup", {
+      const response = await fetch("https://helath-connect.onrender.com/api/v1/signup", { 
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(input),
