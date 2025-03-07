@@ -13,7 +13,7 @@ const Modal = ({ doctor, onClose }) => {
 
         setLoading(true);
         try {
-            const response = await fetch("/api/v1/bookAppointment", {
+            const response = await fetch("https://helath-connect.onrender.com/api/v1/bookAppointment", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" }, 
                 body: JSON.stringify({
