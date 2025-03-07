@@ -8,7 +8,7 @@ const Navbar = () => {
 
     const fetchData = async () => {
         try {
-            const output = await fetch('/api/v1/getAllDoctors');
+            const output = await fetch('https://helath-connect.onrender.com/api/v1/getAllDoctors');
             const res = await output.json();
 
             let tempArr = [];
