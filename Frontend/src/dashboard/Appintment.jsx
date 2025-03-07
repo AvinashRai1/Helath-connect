@@ -32,7 +32,7 @@ const Appointment = () => {
         }
         setLoading(true);
         try {
-            const response = await fetch("/api/v1/getDoctors", { 
+            const response = await fetch("https://helath-connect.onrender.com/api/v1/getDoctors", { 
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify({ speciality: specialty }),
