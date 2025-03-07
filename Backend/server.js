@@ -8,7 +8,7 @@ require('dotenv').config();
 const PORT=process.env.PORT || 4000;   
 app.use(
   cors({
-    origin: "https://helath-connect-4-frontend.onrender.com", // ✅ Your frontend URL
+   
     credentials: true, // ✅ Allow cookies to be sent
     methods: ["GET", "POST", "PUT", "DELETE"], // ✅ Allowed HTTP methods
     allowedHeaders: ["Content-Type", "Authorization"], // ✅ Allowed headers
