@@ -10,7 +10,7 @@ const Navbardash = () => {
   useEffect(() => {
     const fetchUser = async () => {
       try {
-        const response = await fetch("/api/v1/getuser", {
+        const response = await fetch("https://helath-connect.onrender.com/api/v1/getuser", {
           method: "GET",
           credentials: "include",
           headers: { "Content-Type": "application/json" },
@@ -28,7 +28,7 @@ const Navbardash = () => {
 
   const handleLogout = async () => {
     try {
-      const response = await fetch("/api/v1/logout", {
+      const response = await fetch("https://helath-connect.onrender.com/api/v1/logout", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
       });
