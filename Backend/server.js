@@ -5,10 +5,10 @@ const cookieParser=require('cookie-parser');
 
 require('dotenv').config();
 
-const PORT=4000;   
+const PORT=process.env.PORT || 4000;   
 
 app.use(express.json()); 
-app.use(cookieParser());   
+app.use(cookieParser());    
 
 
 const {dbConnect}=require('./db/database');
