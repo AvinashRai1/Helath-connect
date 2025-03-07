@@ -16,7 +16,7 @@ const Appointment = () => {
     const fetchAllDoctors = async () => {
         setLoading(true);
         try {
-            const response = await fetch("/api/v1/getAllDoctors", { method: "GET" });
+            const response = await fetch("https://helath-connect.onrender.com/api/v1/getAllDoctors", { method: "GET" });
             const data = await response.json();
             if (data.success) setDoctors(data.allDoc);
         } catch (error) {
