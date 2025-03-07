@@ -20,7 +20,7 @@ const DoctorDetails = () => {
 
     const fetchData=async()=>{
         try{
-           let res=await axios.post('/api/v1/getDoctors', {           
+           let res=await axios.post('https://helath-connect.onrender.com/api/v1/getDoctors', {           
             speciality:speciality, 
            });  
            console.log(res.data.allDoc) 
